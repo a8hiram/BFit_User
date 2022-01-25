@@ -2,8 +2,5 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/white"></item>
 
-    <item>
-        <bitmap android:src="@drawable/app_icon_low_res"
-            android:gravity="center"></bitmap>
-    </item>
+    <item android:drawable="@drawable/app_icon" android:gravity="center"></item>
 </layer-list>
