@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/app_sort_icon.xml" value="0.28974358974358977" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/background_splashscreen.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/calendar_icon.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/envelope_icon.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/gender_icon.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/lock_icon.xml" value="0.28974358974358977" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/profile_icon.xml" value="0.28974358974358977" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/profile_icon_drawable.xml" value="0.28974358974358977" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/ripple.xml" value="0.28974358974358977" />
@@ -11,7 +16,10 @@
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/round_rect_credential.xml" value="0.28974358974358977" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/round_rect_shape.xml" value="0.2942708333333333" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/round_rect_stroke.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/scale_icon.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/sign_in_icon.xml" value="0.28974358974358977" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/unit_rectangle.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/user_icon.xml" value="0.28974358974358977" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_complete_your_profile.xml" value="0.33" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_get_started.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_main.xml" value="0.33" />
