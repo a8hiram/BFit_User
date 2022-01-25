@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/background_splashscreen.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/profile_icon.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/profile_icon_drawable.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/ripple.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/ripple_logo.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/round_rect_credential.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/round_rect_shape.xml" value="0.2942708333333333" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/round_rect_stroke.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/unit_rectangle.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_complete_your_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_get_started.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.28974358974358977" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
