@@ -88,7 +88,7 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/round_rect_credential"
         android:drawableLeft="@drawable/gender_icon"
-        android:drawableRight="@drawable/dropdown_arrow"
+        android:drawableRight="@drawable/drop_down_icon"
         android:drawablePadding="10dp"
         android:fontFamily="@font/poppins"
         android:gravity="center_vertical"
