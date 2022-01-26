@@ -28,22 +28,10 @@
     <ImageView
         android:id="@+id/imageView_vector"
         android:layout_width="315dp"
-        android:layout_height="200dp"
+        android:layout_height="195dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vector" />
-
-    <ImageView
-        android:id="@+id/imageView_girl"
-        android:layout_width="250dp"
-        android:layout_height="190dp"
-        android:layout_marginStart="70dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="70dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
