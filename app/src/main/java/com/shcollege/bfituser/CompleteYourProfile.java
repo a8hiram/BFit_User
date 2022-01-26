@@ -25,5 +25,12 @@ public class CompleteYourProfile extends AppCompatActivity {
         next = (TextView) findViewById(R.id.textView_next);
         weight = (EditText) findViewById(R.id.editText_yourWeight);
         height = (EditText) findViewById(R.id.editText_yourHeight);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CompleteYourProfile.this,GoalActivity.class));
+            }
+        });
     }
 }

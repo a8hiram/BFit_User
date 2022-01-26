@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BFitUser">
         <activity
+            android:name=".GoalActivity"
+            android:exported="false" />
+        <activity
             android:name=".GetStarted"
             android:exported="false" />
         <activity
@@ -28,7 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.BFitUser" />
 
         <meta-data
