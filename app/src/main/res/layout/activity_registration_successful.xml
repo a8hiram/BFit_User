@@ -1,55 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GoalActivity">
+    tools:context=".RegistrationSuccessful">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="75dp"
-        android:paddingRight="75dp"
-        android:clipToPadding="false"
-        tools:ignore="SpeakableTextPresentCheck">
-    </androidx.viewpager.widget.ViewPager>
-
-    <TextView
-        android:id="@+id/textView_whatIsYourGoal"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="90dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_icon" />
+
+    <TextView
+        android:id="@+id/textView_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="95dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="What is your goal?"
+        android:text="Welcome, Shanel!"
         android:textColor="#1D1617"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView_bestProgram"
-        android:layout_width="185dp"
+        android:id="@+id/textView_allSet"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="95dp"
+        android:layout_marginEnd="80dp"
         android:fontFamily="@font/poppins"
         android:gravity="center"
-        android:text="It will help us to choose a best program for you!"
+        android:text="You are all set now, let’s reach your goals together with us"
         android:textColor="#7B6F72"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_whatIsYourGoal" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_welcome" />
 
     <TextView
-        android:id="@+id/textView_confirm"
+        android:id="@+id/textView_goToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -59,11 +60,10 @@
         android:clickable="true"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
-        android:text="Confirm"
+        android:text="Go To Login"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

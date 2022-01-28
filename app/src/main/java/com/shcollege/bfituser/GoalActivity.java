@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.animation.ArgbEvaluator;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class GoalActivity extends AppCompatActivity {
 
+    TextView confirm;
     ViewPager viewPager;
     Adapter adapter;
     List<Model> models;
@@ -22,16 +26,18 @@ public class GoalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goal);
 
+        confirm = (TextView) findViewById(R.id.textView_confirm);
+
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.improve_shape, "Improve Shape", "I have a low amount of body fat and need / want to build more muscle"));
-        models.add(new Model(R.drawable.lean_and_tone, "Lean & Tone", "I’m “skinny fat”. look thin but have no shape. I want to add learn muscle in the right way"));
+        models.add(new Model(R.drawable.improve_shape, "Improve Shape", "I have a low amount of body fat and want to build more muscle mass"));
+        models.add(new Model(R.drawable.lean_and_tone, "Lean & Tone", "I’m “skinny fat”. I look thin but have no shape. I want to add lean muscle in the right way"));
         models.add(new Model(R.drawable.lose_a_fat, "Lose a Fat", "I have over 20 lbs to lose. I want to drop all this fat and gain muscle mass"));
 
         adapter = new Adapter(models, this);
 
         viewPager = findViewById(R.id.viewPager);
         viewPager.setAdapter(adapter);
-        viewPager.setPadding(200, 0, 50, 0);
+        viewPager.setPageMargin(125);
 
         Integer[] colors_temp = {
                 getResources().getColor(R.color.white),
@@ -40,7 +46,6 @@ public class GoalActivity extends AppCompatActivity {
         };
 
         colors = colors_temp;
-
 
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -66,6 +71,13 @@ public class GoalActivity extends AppCompatActivity {
             @Override
             public void onPageScrollStateChanged(int state) {
 
+            }
+        });
+
+        confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GoalActivity.this,RegistrationSuccessful.class));
             }
         });
     }

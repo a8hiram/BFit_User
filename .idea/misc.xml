@@ -27,10 +27,11 @@
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/user_icon.xml" value="0.28974358974358977" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_complete_your_profile.xml" value="0.33" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_get_started.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_goal.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_goal.xml" value="0.22" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_register.xml" value="0.33" />
-        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/item.xml" value="0.278125" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_registration_successful.xml" value="0.278125" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/item.xml" value="0.25" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.28974358974358977" />
       </map>
     </option>

@@ -9,13 +9,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="22dp"
-        android:layout_margin="8dp">
+        app:cardCornerRadius="22dp">
     </androidx.cardview.widget.CardView>
 
     <RelativeLayout
-        android:layout_width="275dp"
-        android:layout_height="480dp"
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
         android:background="@drawable/round_rectangle_goal">
 
         <ImageView
