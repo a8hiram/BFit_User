@@ -7,7 +7,7 @@ import com.cuberto.liquid_swipe.LiquidPager;
 public class OnBoarding extends AppCompatActivity {
 
     LiquidPager pager;
-    ViewPager viewPager;
+    ViewPager adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,8 +15,8 @@ public class OnBoarding extends AppCompatActivity {
         setContentView(R.layout.activity_get_started);
 
         pager = findViewById(R.id.pager);
-        viewPager = new ViewPager(getSupportFragmentManager(), 1);
-        pager.setAdapter(viewPager);
+        adapter = new ViewPager(getSupportFragmentManager(), 1);
+        pager.setAdapter(adapter);
     }
 
 }
