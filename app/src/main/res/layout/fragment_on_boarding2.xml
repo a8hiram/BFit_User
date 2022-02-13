@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding2">
 
     <ImageView
-        android:id="@+id/imageView_onboarding4"
+        android:id="@+id/imageView_onboarding2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
@@ -16,32 +17,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/onboarding4" />
+        app:srcCompat="@drawable/onboarding2" />
 
     <TextView
-        android:id="@+id/textView_goal4"
+        android:id="@+id/textView_goal2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="65dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Improve Sleep Quality"
+        android:text="Get Burn"
         android:textColor="#1D1617"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_onboarding4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_onboarding2" />
 
     <TextView
-        android:id="@+id/textView_desc4"
+        android:id="@+id/textView_desc2"
         android:layout_width="315dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins"
-        android:text="Improve the quality of your sleep with us. Good quality sleep can bring a good mood in the morning."
+        android:text="Let’s keep burning to achive yours goals. It hurts only temporarily, but if you give up now you will be in pain forever."
         android:textColor="#7B6F72"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_goal4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_goal2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

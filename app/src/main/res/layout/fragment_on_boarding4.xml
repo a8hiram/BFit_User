@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding4">
 
     <ImageView
-        android:id="@+id/imageView_onboarding3"
+        android:id="@+id/imageView_onboarding4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-10dp"
@@ -16,32 +17,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/onboarding3" />
+        app:srcCompat="@drawable/onboarding4" />
 
     <TextView
-        android:id="@+id/textView_goal3"
+        android:id="@+id/textView_goal4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Eat Well"
+        android:text="Improve Sleep Quality"
         android:textColor="#1D1617"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_onboarding3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_onboarding4" />
 
     <TextView
-        android:id="@+id/textView_desc3"
+        android:id="@+id/textView_desc4"
         android:layout_width="315dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins"
-        android:text="Let's start a healthy lifestyle with us. We can determine your diet every day. Healthy eating is fun."
+        android:text="Improve the quality of your sleep with us. Good quality sleep can bring a good mood in the morning."
         android:textColor="#7B6F72"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_goal3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_goal4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
