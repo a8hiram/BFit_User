@@ -25,17 +25,6 @@ public class GetStarted extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
 
-        SharedPreferences preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE);
-        String firstTime = preferences.getString("FirstTimeInstall", "");
-
-        if (firstTime.equals("No")) {
-            Intent intent = new Intent(GetStarted.this, MainActivity.class);
-        }else {
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putString("FirstTimeInstall", "Yes");
-            editor.apply();
-        }
-
         getStarted = findViewById(R.id.textView_getStarted);
 
         getStarted.setOnClickListener(new View.OnClickListener() {
