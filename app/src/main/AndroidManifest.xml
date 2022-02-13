@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BFitUser">
         <activity
+            android:name=".OnBoarding"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationSuccessful"
             android:exported="false" />
         <activity
