@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnBoarding4">
+    tools:context=".OnBoarding4"
+    android:background="@drawable/round_rect_shape">
 
     <ImageView
         android:id="@+id/imageView_onboarding4"

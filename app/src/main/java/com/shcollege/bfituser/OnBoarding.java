@@ -3,20 +3,26 @@ package com.shcollege.bfituser;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.cuberto.liquid_swipe.LiquidPager;
+import com.shcollege.bfituser.databinding.ActivityOnBoardingBinding;
 
 public class OnBoarding extends AppCompatActivity {
 
     LiquidPager pager;
-    ViewPager adapter;
+    LiquidPagerAdapter adapter;
+
+    ActivityOnBoardingBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_get_started);
 
-        pager = findViewById(R.id.pager);
-        adapter = new ViewPager(getSupportFragmentManager(), 1);
-        pager.setAdapter(adapter);
+        binding = ActivityOnBoardingBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        adapter = new LiquidPagerAdapter(getSupportFragmentManager(),1);
+        if(adapter != null && binding.pager != null)
+            binding.pager.setAdapter(adapter);
+
     }
 
 }

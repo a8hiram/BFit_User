@@ -50,6 +50,14 @@
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_registration_successful.xml" value="0.278125" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/item.xml" value="0.25" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.28974358974358977" />
+        <entry key="..\:/Users/BCI LAB/StudioProjects/BFit_User/app/src/main/res/drawable/ripple.xml" value="0.2565" />
+        <entry key="..\:/Users/BCI LAB/StudioProjects/BFit_User/app/src/main/res/drawable/ripple_logo.xml" value="0.2565" />
+        <entry key="..\:/Users/BCI LAB/StudioProjects/BFit_User/app/src/main/res/layout/activity_get_started.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/BCI LAB/StudioProjects/BFit_User/app/src/main/res/layout/activity_on_boarding.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/BCI LAB/StudioProjects/BFit_User/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/BCI LAB/StudioProjects/BFit_User/app/src/main/res/layout/fragment_on_boarding2.xml" value="0.33" />
+        <entry key="..\:/Users/BCI LAB/StudioProjects/BFit_User/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/BCI LAB/StudioProjects/BFit_User/app/src/main/res/layout/fragment_on_boarding4.xml" value="0.2" />
       </map>
     </option>
   </component>
