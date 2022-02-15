@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GoalActivity extends AppCompatActivity {
+public class Goal extends AppCompatActivity {
 
     TextView confirm;
     ViewPager viewPager;
@@ -77,7 +77,7 @@ public class GoalActivity extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GoalActivity.this,RegistrationSuccessful.class));
+                startActivity(new Intent(Goal.this,RegistrationSuccessful.class));
             }
         });
     }

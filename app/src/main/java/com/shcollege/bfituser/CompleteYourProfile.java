@@ -29,7 +29,7 @@ public class CompleteYourProfile extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CompleteYourProfile.this,GoalActivity.class));
+                startActivity(new Intent(CompleteYourProfile.this, Goal.class));
             }
         });
     }

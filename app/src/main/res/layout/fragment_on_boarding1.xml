@@ -5,16 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OnBoarding1"
-    android:background="@drawable/round_rect_shape">
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imageView_onboarding1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="-15dp"
         android:scaleType="center"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -5,30 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OnBoarding4"
-    android:background="@drawable/round_rect_shape">
+    android:background="@drawable/onboarding_bg">
 
     <ImageView
         android:id="@+id/imageView_onboarding4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="-15dp"
+        android:clickable="true"
         android:scaleType="center"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/onboarding4" />
+        app:srcCompat="@drawable/onboarding4"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView_goal4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="65dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Improve Sleep Quality"
-        android:textColor="#1D1617"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_onboarding4" />
@@ -41,9 +41,24 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins"
         android:text="Improve the quality of your sleep with us. Good quality sleep can bring a good mood in the morning."
-        android:textColor="#7B6F72"
+        android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_goal4" />
+
+    <ImageView
+        android:id="@+id/imageView_onboardingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/onboarding_ripple"
+        android:clickable="true"
+        android:foreground="@drawable/onboarding_button_icon"
+        android:foregroundGravity="center"
+        android:src="@drawable/onboarding_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,7 @@ public class GetStarted extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
 
-        getStarted = findViewById(R.id.textView_getStarted);
+        getStarted = (TextView) findViewById(R.id.textView_getStarted);
 
         getStarted.setOnClickListener(new View.OnClickListener() {
             @Override

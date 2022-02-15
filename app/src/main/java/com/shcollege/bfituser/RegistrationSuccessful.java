@@ -21,7 +21,7 @@ public class RegistrationSuccessful extends AppCompatActivity {
         goToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegistrationSuccessful.this,MainActivity.class));
+                startActivity(new Intent(RegistrationSuccessful.this, LoginActivity.class));
             }
         });
     }

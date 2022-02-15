@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BFitUser">
         <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".OnBoarding"
             android:exported="false" />
         <activity
             android:name=".RegistrationSuccessful"
             android:exported="false" />
         <activity
-            android:name=".GoalActivity"
+            android:name=".Goal"
             android:exported="false" />
         <activity
             android:name=".GetStarted"
@@ -38,7 +41,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:theme="@style/Theme.BFitUser" />
 
         <meta-data
