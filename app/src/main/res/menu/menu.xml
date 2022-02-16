@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/menu_home"
+        android:icon="@drawable/home_icon"/>
+
+    <item
+        android:id="@+id/workouts"
+        android:title="@string/menu_workouts"
+        android:icon="@drawable/running_icon"/>
+
+    <item
+        android:id="@+id/meal_planner"
+        android:title="@string/menu_meal_planner"
+        android:icon="@drawable/meals_icon"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/menu_profile"
+        android:icon="@drawable/profile_icon"/>
+</menu>
