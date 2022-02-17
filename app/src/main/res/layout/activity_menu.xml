@@ -9,7 +9,8 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/design_bottom_navigation_height"
+        android:theme="@style/Widget.BottomNavigationView"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_navigation"
         android:fontFamily="@font/poppins_bold"
