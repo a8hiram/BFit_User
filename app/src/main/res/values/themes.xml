@@ -24,9 +24,11 @@
 
     <style name="BottomNavigation.ActiveItemTextAppearance" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="BottomNavigation.InactiveItemTextAppearance" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">12sp</item>
     </style>
 </resources>
