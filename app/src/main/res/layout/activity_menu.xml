@@ -83,22 +83,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="145dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:hapticFeedbackEnabled="true"
-                    app:cardCornerRadius="22dp">
+                    app:cardCornerRadius="22dp"
+                    app:cardElevation="0dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/cardview_bg"
-                        android:orientation="vertical">
-                    </LinearLayout>
+                        android:orientation="vertical"></LinearLayout>
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
                         <TextView
                             android:id="@+id/textView_bmi"
                             android:layout_width="wrap_content"
@@ -111,6 +115,7 @@
                             android:textSize="14sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
                         <TextView
                             android:id="@+id/textView_bmiStatus"
                             android:layout_width="wrap_content"
@@ -123,6 +128,7 @@
                             android:textSize="12sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView_bmi" />
+
                         <TextView
                             android:id="@+id/textView_viewMore"
                             android:layout_width="wrap_content"
@@ -139,6 +145,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView_bmiStatus"
                             tools:ignore="TouchTargetSizeCheck" />
+
                         <ImageView
                             android:id="@+id/imageView_pie"
                             android:layout_width="wrap_content"
@@ -149,6 +156,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/pie" />
+
                         <TextView
                             android:id="@+id/textView_bmiNumber"
                             android:layout_width="wrap_content"
@@ -169,21 +177,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:layout_marginTop="30dp"
                     android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginRight="30dp"
                     android:hapticFeedbackEnabled="true"
-                    app:cardCornerRadius="16dp">
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/cardview_bg_transparent"/>
+                        android:background="@drawable/cardview_bg_transparent" />
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
                         <TextView
                             android:id="@+id/textView_target"
                             android:layout_width="wrap_content"
@@ -192,12 +205,13 @@
                             android:layout_marginTop="15dp"
                             android:layout_marginBottom="15dp"
                             android:fontFamily="@font/poppins"
+                            android:text="Today's Target"
                             android:textColor="#1D1617"
                             android:textSize="14sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            android:text="Today's Target" />
+                            app:layout_constraintTop_toTopOf="parent" />
+
                         <TextView
                             android:id="@+id/textView_check"
                             android:layout_width="wrap_content"
@@ -221,64 +235,262 @@
             </LinearLayout>
 
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:id="@+id/textView_activityStatus"
+                    android:id="@+id/textView_latestWorkout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
                     android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Activity Status"
+                    android:text="Latest Workout"
                     android:textColor="#1D1617"
                     android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textView_seeMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="See more"
+                    android:textColor="#ADA4A5"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:hapticFeedbackEnabled="true"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView_workout1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/app_icon" />
+
+                        <TextView
+                            android:id="@+id/textView_workout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="Lowerbody Workout"
+                            android:textColor="#1D1617"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView_workout1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView_calTime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="200 calories burn | 30 minutes"
+                            android:textColor="#A4A9AD"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView_workout1"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_workout1" />
+
+                        <ImageView
+                            android:id="@+id/imageView_goTo1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:clickable="true"
+                            android:foreground="@drawable/onboarding_button_icon"
+                            android:foregroundGravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/workout_circle" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="80dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="30dp"
                     android:hapticFeedbackEnabled="true"
-                    app:cardCornerRadius="20dp">
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/cardview_bg_transparent" />
+                        android:background="@color/white" />
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView_workout2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/app_icon" />
+
                         <TextView
-                            android:id="@+id/textView_HR"
+                            android:id="@+id/textView_workout2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/poppins"
-                            android:text="Heart Rate"
+                            android:text="Fullbody Workout"
                             android:textColor="#1D1617"
                             android:textSize="12sp"
-                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imageView_workout2"
                             app:layout_constraintTop_toTopOf="parent" />
+
                         <TextView
-                            android:id="@+id/textView_BPM"
+                            android:id="@+id/textView_calTime2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/poppins_medium"
-                            android:text="78 BPM"
-                            android:textColor="#9DCEFF"
-                            android:textSize="14sp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="180 calories burn | 20 minutes"
+                            android:textColor="#A4A9AD"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView_workout2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_workout2" />
+
+                        <ImageView
+                            android:id="@+id/imageView_goTo2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:clickable="true"
+                            android:foreground="@drawable/onboarding_button_icon"
+                            android:foregroundGravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/workout_circle" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:hapticFeedbackEnabled="true"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView_workout3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView_HR" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/app_icon" />
+
+                        <TextView
+                            android:id="@+id/textView_workout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="Ab Workout"
+                            android:textColor="#1D1617"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView_workout3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView_calTime3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="150 calories burn | 20 minutes"
+                            android:textColor="#A4A9AD"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView_workout3"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_workout3" />
+
+                        <ImageView
+                            android:id="@+id/imageView_goTo3"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:clickable="true"
+                            android:foreground="@drawable/onboarding_button_icon"
+                            android:foregroundGravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/workout_circle" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
