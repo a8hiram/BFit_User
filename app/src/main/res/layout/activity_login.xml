@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView_register"
+        android:id="@+id/textView_noaccRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_heyThere" />
 
     <EditText
-        android:id="@+id/editText_email"
+        android:id="@+id/editText_loginEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -93,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_welcomeBack" />
 
     <EditText
-        android:id="@+id/editText_password"
+        android:id="@+id/editText_loginPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -113,7 +113,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_loginEmail" />
 
     <TextView
         android:id="@+id/textView_forgotPassword"
@@ -128,51 +128,6 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_password" />
-
-    <TextView
-        android:id="@+id/textView_or"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="180dp"
-        android:fontFamily="@font/poppins"
-        android:text="Or"
-        android:textColor="#1D1617"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_login" />
-
-    <ImageView
-        android:id="@+id/imageView_google"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/ripple_logo"
-        android:clickable="true"
-        app:layout_constraintEnd_toStartOf="@+id/imageView_facebook"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_or"
-        app:srcCompat="@drawable/google_with_border"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/imageView_facebook"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="150dp"
-        android:background="@drawable/ripple_logo"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView_google"
-        app:layout_constraintTop_toBottomOf="@+id/textView_or"
-        app:srcCompat="@drawable/facebook_with_border"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_loginPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

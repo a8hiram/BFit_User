@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/angle_right.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/app_icon.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/app_sort_icon.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/background_splashscreen.xml" value="0.28489583333333335" />
@@ -43,12 +44,18 @@
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/sign_in_icon.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/small_arrow.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/unit_rectangle.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/workout_circle.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout-v23/activity_menu.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_check.xml" value="0.2151268115942029" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_complete_your_profile.xml" value="0.2151268115942029" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_forgot.xml" value="0.33" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_get_started.xml" value="0.22554347826086957" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_goal.xml" value="0.26875" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_login.xml" value="0.2151268115942029" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_main.xml" value="0.26875" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_menu.xml" value="0.33" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_on_boarding.xml" value="0.26875" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_register.xml" value="0.2151268115942029" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_test.xml" value="0.26875" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/fragment_on_boading2.xml" value="0.26875" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.26875" />
@@ -59,6 +66,7 @@
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/fragment_onboarding2.xml" value="0.26875" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/fragment_onboarding3.xml" value="0.26875" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/fragment_onboarding4.xml" value="0.26875" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/gender_list.xml" value="0.2151268115942029" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/item.xml" value="0.2595108695652174" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/menu/menu.xml" value="0.26875" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1640625" />
@@ -92,10 +100,6 @@
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_registration_successful.xml" value="0.278125" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/layout/item.xml" value="0.25" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/BFitUser/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.28974358974358977" />
-        <entry key="..\:/Users/aadmin/AndroidStudioProjects/BFit_User/app/src/main/res/drawable/workout_circle.xml" value="0.252" />
-        <entry key="..\:/Users/aadmin/AndroidStudioProjects/BFit_User/app/src/main/res/layout/activity_menu.xml" value="0.25" />
-        <entry key="..\:/Users/aadmin/AndroidStudioProjects/BFit_User/app/src/main/res/layout/activity_on_boarding.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/aadmin/AndroidStudioProjects/BFit_User/app/src/main/res/layout/fragment_on_boarding4.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>

@@ -66,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_completeYourProfile" />
 
-    <TextView
+    <AutoCompleteTextView
         android:id="@+id/textView_gender"
         android:layout_width="315dp"
         android:layout_height="48dp"
@@ -80,18 +80,23 @@
         android:fontFamily="@font/poppins"
         android:gravity="center_vertical"
         android:hint="Choose Gender"
-        android:inputType="text"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textColor="#ADA4A5"
         android:textColorHint="#ADA4A5"
         android:textSize="12sp"
+        android:dropDownHeight="155dp"
+        android:cursorVisible="false"
+        android:maxLines="1"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_knowMore" />
 
-    <TextView
-        android:id="@+id/textView_dob"
+    <EditText
+        android:id="@+id/editText_dob"
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:layout_marginStart="30dp"
@@ -109,6 +114,10 @@
         android:textColor="#ADA4A5"
         android:textColorHint="#ADA4A5"
         android:textSize="12sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_gender" />
@@ -133,7 +142,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_dob" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_dob" />
 
     <EditText
         android:id="@+id/editText_yourHeight"
@@ -172,7 +181,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_dob" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_dob" />
 
     <TextView
         android:id="@+id/textView_heightUnit"

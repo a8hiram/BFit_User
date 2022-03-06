@@ -5,4 +5,10 @@
     <string name="menu_workouts">Workouts</string>
     <string name="menu_meal_planner">Meal Planner</string>
     <string name="menu_profile">Profile</string>
+
+    <string-array name="Gender_Names">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
 </resources>
