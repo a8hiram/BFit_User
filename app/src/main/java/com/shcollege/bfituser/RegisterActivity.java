@@ -124,8 +124,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    User user = new User(firstname, lastname, email, password);
-                    FirebaseDatabase.getInstance().getReference("User")
+                    UserCredentials user = new UserCredentials(firstname, lastname, email, password);
+                    FirebaseDatabase.getInstance().getReference("User Credentials")
                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                             .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
 

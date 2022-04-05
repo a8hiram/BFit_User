@@ -22,8 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="290dp"
             android:layout_marginTop="35dp"
-            android:src="@drawable/improve_shape">
-        </ImageView>
+            android:src="@drawable/improve_shape"></ImageView>
 
         <TextView
             android:id="@+id/title"
@@ -35,8 +34,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="Improve Shape"
             android:textColor="#FFFFFF"
-            android:textSize="14sp">
-        </TextView>
+            android:textSize="14sp"></TextView>
 
         <ImageView
             android:id="@+id/line"

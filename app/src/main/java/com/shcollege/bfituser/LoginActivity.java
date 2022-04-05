@@ -12,8 +12,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -59,6 +61,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         login.setOnClickListener(this);
         no_acc_register = (TextView) findViewById(R.id.textView_noaccRegister);
         no_acc_register.setOnClickListener(this);
+
+        mAuth = FirebaseAuth.getInstance();
     }
 
     public void onClick(View v) {
@@ -76,46 +80,60 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void submitLogin() {
-        String email = emailLogin.getText().toString().trim();
-        String password = passwordLogin.getText().toString().trim();
+        String s_email = emailLogin.getText().toString().trim();
+        String s_password = passwordLogin.getText().toString().trim();
 
-        if(email.isEmpty()){
+        if(s_email.isEmpty()){
             emailLogin.setError("This field is required");
             emailLogin.requestFocus();
             return;
         }
-        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            emailLogin.setError("Please provide a valid email");
-            emailLogin.requestFocus();
-            return;
-        }
-        if(password.isEmpty()){
+
+        if(s_password.isEmpty()){
             passwordLogin.setError("This field is required");
             passwordLogin.requestFocus();
             return;
         }
-        if(password.length() < 6){
-            passwordLogin.setError("Minimum password length should be 6 characters");
-            passwordLogin.requestFocus();
-            return;
-        }
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
 
-                            if (User.isEmailVerified()) {
-                                StyleableToast.makeText(getApplicationContext(), "Start grinding now!", R.style.customtoast).show();
-                                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
-                                startActivity(intent);
-                                finish();
+        else
+        {
+
+            mAuth.signInWithEmailAndPassword(s_email,s_password)
+                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful())
+                            {
+                                FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+                                if(firebaseUser.isEmailVerified())
+                                {
+                                    StyleableToast.makeText(LoginActivity.this, "Start grinding now!", R.style.customtoast).show();
+                                    Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                                    startActivity(intent);
+                                }
+                                else
+                                {
+                                    StyleableToast.makeText(LoginActivity.this, "Email not verified! Verify now", R.style.customtoast).show();
+                                }
+
+
                             }
-                        }else {
-                            StyleableToast.makeText(LoginActivity.this, "Failed to sign in! Please check your credentials", R.style.customtoast).show();
                         }
-                    }
-                });
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            StyleableToast.makeText(LoginActivity.this, e.getMessage(), R.style.customtoast).show();
+                        }
+                    });
+
+
+
+
+        }
+
+
+
     }
 }

@@ -13,12 +13,16 @@ import android.widget.AutoCompleteTextView;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.ktx.Firebase;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -36,6 +40,9 @@ public class CompleteYourProfile extends AppCompatActivity implements View.OnCli
     final Calendar myCalendar = Calendar.getInstance();
 
     private FirebaseAuth fUser;
+    FirebaseDatabase database;
+    DatabaseReference reference;
+    FirebaseUser firebaseUser;
 
     private long backPressedTime;
     private StyleableToast backToast;
@@ -60,6 +67,9 @@ public class CompleteYourProfile extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_complete_your_profile);
 
         fUser = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        reference = database.getReference("User Details");
+        firebaseUser = fUser.getCurrentUser();
 
         gender = (AutoCompleteTextView) findViewById(R.id.textView_gender);
         dob = (EditText) findViewById(R.id.editText_dob);
@@ -150,10 +160,32 @@ public class CompleteYourProfile extends AppCompatActivity implements View.OnCli
             height.requestFocus();
             return;
         }
-        HashMap<String, Object> map = new HashMap<>();
-        map.put("gender", setGender);
-        map.put("dob", setDOB);
-        map.put("weight", setWeight);
-        map.put("height", setHeight);
+
+        UserDetails obj = new UserDetails(setGender,setDOB,setWeight,setHeight);
+
+        reference.child(firebaseUser.getUid())
+                .setValue(obj)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful())
+                        {
+                            Intent i = new Intent(CompleteYourProfile.this,Goal.class);
+                            StyleableToast.makeText(CompleteYourProfile.this, "Details added successfully", R.style.customtoast).show();
+                            startActivity(i);
+
+                        }
+                        else
+                        {
+                            StyleableToast.makeText(CompleteYourProfile.this, task.getException().getMessage(), R.style.customtoast).show();
+                        }
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        StyleableToast.makeText(CompleteYourProfile.this, e.getMessage(), R.style.customtoast).show();
+                    }
+                });
     }
 }
