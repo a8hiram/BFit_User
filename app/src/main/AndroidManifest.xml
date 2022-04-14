@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BFitUser">
         <activity
+            android:name=".WorkoutFinishedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Meals"
+            android:exported="false" />
+        <activity
+            android:name=".Workouts"
+            android:exported="false" />
+        <activity
             android:name=".ForgotActivity"
             android:exported="false" />
         <activity
@@ -45,10 +60,10 @@
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

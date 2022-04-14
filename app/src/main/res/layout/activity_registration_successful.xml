@@ -26,7 +26,6 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="95dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Welcome, Shanel!"
         android:textColor="#1D1617"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

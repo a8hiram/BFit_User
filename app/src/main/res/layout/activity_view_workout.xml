@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewWorkout">
+
+    <RelativeLayout
+        android:id="@+id/topBarWorkoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView_categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Cardio Workout"
+            android:textColor="#1D1617"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <androidx.media2.widget.VideoView
+        android:id="@+id/videoView_workout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/topBarWorkoutName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"></androidx.media2.widget.VideoView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/videoView_workout"
+        android:layout_above="@+id/textView_finish"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_workoutName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="15 Minute Beginner Cardio Workout"
+                android:textColor="#1D1617"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_workoutName"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins"
+                android:text="Easy | 390 Calories Burn"
+                android:textColor="#7B6F72"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_level"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Description"
+                android:textColor="#1D1617"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_descriptionDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_description"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins"
+                android:text="Do this 15 minute beginner, full body, cardio workout at home! This is a non-stop cardio routine with basic, low impact exercises for beginners. No equipment needed. Just yourself!"
+                android:textColor="#7B6F72"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_instructor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_descriptionDetail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Instructor Name"
+                android:textColor="#1D1617"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textView_instructorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_instructor"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="MadFit"
+                android:textColor="#7B6F72"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_instructorName"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Duration"
+                android:textColor="#1D1617"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textView_durationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_duration"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="15 Minutes"
+                android:textColor="#7B6F72"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/textView_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Finish >"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
