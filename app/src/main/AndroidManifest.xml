@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BFitUser">
         <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMeal"
+            android:exported="false" />
+        <activity
             android:name=".WorkoutFinishedActivity"
             android:exported="false" />
         <activity

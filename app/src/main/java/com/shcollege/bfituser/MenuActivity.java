@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,6 +28,7 @@ public class  MenuActivity extends AppCompatActivity {
     private StyleableToast backToast;
 
     private TextView welcomeUser;
+    private TextView viewMore;
     private TextView bmiNumber;
     private TextView bmiStatus;
     private int weight;
@@ -65,6 +67,15 @@ public class  MenuActivity extends AppCompatActivity {
         helloUser();
         calculateBMI();
         setBottomNavigationView();
+
+        viewMore = (TextView) findViewById(R.id.textView_viewMore);
+        viewMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this, Profile.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setBottomNavigationView() {

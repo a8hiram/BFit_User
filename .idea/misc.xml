@@ -13,8 +13,10 @@
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/bottom_navigation.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/button_bg.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/button_bg_blue_linear.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/button_bg_edit.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/button_onboarding1.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/cardview_bg.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/cardview_bg_purple_linear.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/cardview_bg_transparent.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/circle_blank.xml" value="0.1609375" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/gradient_circle.xml" value="0.28489583333333335" />
@@ -42,6 +44,7 @@
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/round_rectangle_goal.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/rounded_video_background.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/running_icon.xml" value="0.28489583333333335" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/shape.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/sign_in_icon.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/small_arrow.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/unit_rectangle.xml" value="0.28489583333333335" />
@@ -50,7 +53,8 @@
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/drawable/workout_circle.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout-v23/activity_menu.xml" value="0.2595108695652174" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_check.xml" value="0.2151268115942029" />
-        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_complete_your_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_complete_your_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_forgot.xml" value="0.33" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_get_started.xml" value="0.22554347826086957" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_goal.xml" value="0.26875" />
@@ -59,10 +63,11 @@
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_meals.xml" value="0.33" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_menu.xml" value="0.33" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_on_boarding.xml" value="0.26875" />
-        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_profile.xml" value="0.22" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_register.xml" value="0.2151268115942029" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_registration_successful.xml" value="0.18568840579710144" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_test.xml" value="0.26875" />
+        <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_view_meal.xml" value="0.25" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_view_workout.xml" value="0.25" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_workout_finished.xml" value="0.2" />
         <entry key="..\:/Users/Abhiram/AndroidStudioProjects/BFitUser/app/src/main/res/layout/activity_workouts.xml" value="0.1544943820224719" />
