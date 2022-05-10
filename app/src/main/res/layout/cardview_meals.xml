@@ -26,18 +26,18 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView_workoutThumbnailCard"
+                android:id="@+id/imageView_mealThumbnailCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
                 android:hapticFeedbackEnabled="true"
                 android:scaleType="center"
-                app:srcCompat="@drawable/cardio"
+                app:srcCompat="@drawable/curried_potato_salad"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/textView_workoutCategoryCard"
+                android:id="@+id/textView_mealCalorieCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -49,21 +49,21 @@
                 android:paddingTop="1dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="1dp"
-                android:text="CARDIO"
+                android:text="141 KCAL"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView_workoutNameCard"
+                android:id="@+id/textView_mealNameCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="15dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="15 Minute Beginner Cardio Workout"
+                android:text="Curried Potato Salad"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"

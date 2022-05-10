@@ -19,7 +19,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Breakfast"
+            android:text="Salad"
             android:textColor="#1D1617"
             android:textSize="16sp" />
     </RelativeLayout>
@@ -37,6 +37,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/videoView_meal"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         tools:ignore="SpeakableTextPresentCheck">
 
         <RelativeLayout
@@ -50,7 +51,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="15 Minute Beginner Cardio Workout"
+                android:text="Curried Potato Salad"
                 android:textColor="#1D1617"
                 android:textSize="16sp" />
 
@@ -63,7 +64,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins"
-                android:text="390 Calories"
+                android:text="141 Calories"
                 android:textColor="#7B6F72"
                 android:textSize="12sp" />
 
@@ -89,7 +90,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins"
-                android:text="Do this 15 minute beginner, full body, cardio workout at home! This is a non-stop cardio routine with basic, low impact exercises for beginners. No equipment needed. Just yourself!"
+                android:text="Protein 3.9g; carbohydrates 25.8g; dietary fiber 2.5g; sugars 3.9g; fat 3g; saturated fat 0.6g; cholesterol 3mg; vitamin a iu 568.3IU; vitamin c 22.9mg; folate 29.4mcg; calcium 44.4mg; iron 1.3mg; magnesium 34mg; potassium 556.8mg; sodium 316.1mg; thiamin 0.1mg; added sugar 1g."
                 android:textColor="#7B6F72"
                 android:textSize="12sp" />
 
